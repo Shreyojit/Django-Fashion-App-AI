@@ -17,9 +17,12 @@ python manage.py makemigrations
 # Run migrations
 python manage.py migrate
 
-# Create superuser if needed
+# Check if superuser exists, if not, create it
 if [[ ! $(python manage.py shell -c "from django.contrib.auth.models import User; print(User.objects.filter(username='shreyo').exists())") == "True" ]]; then
-  python manage.py createsuperuser --no-input --username "shreyo" --email "shreyo@example.com" --password "fashion2025"
+  python manage.py createsuperuser --no-input --username "shreyo" --email "shreyo@example.com"
+  
+  # Set the superuser's password
+  python manage.py shell -c "from django.contrib.auth.models import User; user = User.objects.get(username='shreyo'); user.set_password('fashion2025'); user.save()"
 fi
 
 
