@@ -1,0 +1,56 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Django-specific files
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.venv
+venv/
+ENV/
+env/
+venv.bak/
+.env.bak/
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Static files
+/static/
+media/
+
+# .env files for sensitive environment variables
+*.env
+
+# Coverage reports
+.coverage
+.coverage.*
+
+# Django Secret Key
+secret_key.txt
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# MySQL or PostgreSQL database dumps
+*.sql
+
+# macOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
