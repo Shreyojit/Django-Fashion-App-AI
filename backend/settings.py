@@ -15,7 +15,13 @@ SECRET_KEY = "django-insecure-7(f6c6$(4-$9^^--!x_vlypbw&4&evhdp23i-rjq8!d46z)&b=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'django-fashion-app-ai.onrender.com',  # Add the Render domain
+    'localhost',
+    '127.0.0.1',
+    # Add any other allowed domains here
+    
+]
 
 
 # Application definition
