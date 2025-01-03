@@ -35,7 +35,9 @@ INSTALLED_APPS = [
      "core",
      "wishlist",
      "carts",
-     "extras"
+     "extras",
+     "order",
+     "notification"
     
 ]
 

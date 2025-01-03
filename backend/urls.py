@@ -10,5 +10,7 @@ urlpatterns = [
     path('api/products/', include('core.urls')),  # Add trailing slash here
     path('api/wishlist/',include('wishlist.urls')),
     path('api/cart/',include('carts.urls')),
-    path('api/address/',include('extras.urls'))
+    path('api/address/',include('extras.urls')),
+    path('api/orders/',include('order.urls')),
+    path('api/notifications/',include('notification.urls')),
 ]

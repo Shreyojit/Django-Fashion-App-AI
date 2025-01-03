@@ -72,7 +72,7 @@ class DeleteAddress(APIView):
 class SetDefaultAddress(APIView):
     permission_classes = [IsAuthenticated]
 
-    def post(self, request):
+    def patch(self, request):
         user = request.user
         address_id = request.query_params.get('id')  # Retrieve the address ID from query parameters
 
