@@ -34,6 +34,13 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesSto
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-7(f6c6$(4-$9^^--!x_vlypbw&4&evhdp23i-rjq8!d46z)&b="
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://django-fashion-app-ai.onrender.com',  # Add your Render domain
+    'http://django-fashion-app-ai.onrender.com',  # Also include the HTTP version if necessary
+]
+
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
