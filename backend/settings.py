@@ -10,12 +10,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
+# For production, you should use STATIC_ROOT to store collected static files.
 STATIC_URL = '/static/'
+
+# Add STATICFILES_DIRS if you have custom static directories.
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "static",  # Make sure 'static' directory exists in your project
 ]
+
+# STATIC_ROOT is where static files will be collected when running collectstatic.
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+# Recommended for production environments
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 
 # Quick-start development settings - unsuitable for production
