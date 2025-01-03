@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# exit on error
+set -o errexit
 
-# Create static directory if it doesn't exist
+# Create the 'static' directory if it doesn't exist
 mkdir -p static
 
 # Install dependencies
